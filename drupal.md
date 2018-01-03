@@ -22,77 +22,104 @@ drush omega-wizard
 drush omega-export --revert
 drush dis -y bartik seven
 drush dl ctools views context devel diff features entity entityreference jquery_update panels panels_everywhere ds pathauto strongarm token redirect
-drush en -y ctools views_content page_manager views views_ui context context_ui devel devel_node_access diff features entity entity_token entityreference jquery_update panels panels_everywhere ds pathauto strongarm token redirect```
+drush en -y ctools views_content page_manager views views_ui context context_ui devel devel_node_access diff features entity entity_token entityreference jquery_update panels panels_everywhere ds pathauto strongarm token redirect
+```
 
 ## Hooks
 https://api.drupal.org/api/drupal/includes!module.inc/group/hooks/7.x
 
 ## Backup
-```drush cc all && drush ard
-drush cc all && drush sql-dump | gzip --stdout > $(date +\%Y-\%M-\%d-\%H-\%M-\%S).sql.gz```
+```
+drush cc all && drush ard
+drush cc all && drush sql-dump | gzip --stdout > $(date +\%Y-\%M-\%d-\%H-\%M-\%S).sql.gz
+```
 
 ## Import
-```gunzip -c myfile.sql.gz | drush sqlc
-drush sql-cli < ~/my-sql-dump-file-name.sql```
+```
+gunzip -c myfile.sql.gz | drush sqlc
+drush sql-cli < ~/my-sql-dump-file-name.sql
+```
 
 ## Modules
-```drush dl module
+```
+drush dl module
 drush en module  -y
 drush dis module
 drush pm-uninstall
 drush pml  --no-core
-drush mb my_module menu cron --write --name="My module"```
+drush mb my_module menu cron --write --name="My module"
+```
 
 ## Users
-```drush ucrt username --mail="email@example.com" --password="password"
+```
+drush ucrt username --mail="email@example.com" --password="password"
 drush ucan username
 drush upwd admin --password="new_pass"
-drush uli```
+drush uli
+```
 
 ## Updates
-```drush up -n | grep available
+```
+drush up -n | grep available
 drush up drupal
 drush up views
 drush upc views
-drush updb views```
+drush updb views
+```
 
 ## Mysql:
-```drush sql-cli
-drush sql-cli < dump.sql```
+```
+drush sql-cli
+drush sql-cli < dump.sql
+```
 
 ## Content:
-```drush generate-content 20 --types=page```
+```
+drush generate-content 20 --types=page
+```
 
 ## Features:
-```drush fu
-drush fr```
+```
+drush fu
+drush fr
+```
 
 ## Other:
-```drush vget variable_name
+```
+drush vget variable_name
 drush ws     (watchdog show)
-drush cron```
+drush cron
+```
 
 ## Password reset (if no drush)
 index.php modification, add after `DRUPAL BOOTSTRAP`
-```php
+```
+php
 require('includes/password.inc');
 echo user_hash_password('mypassword'); 
-die();```
+die();
+```
 
 Or `scripts/password-hash.sh` modification
-```#!c:/xampp/php/php.exe```
+```
+#!c:/xampp/php/php.exe
+```
 
 then call:
-```./scripts/password-hash.sh mypassword```
+```
+./scripts/password-hash.sh mypassword
+```
 
 ## Workbench Moderation Add States to old content:
 https://www.drupal.org/node/2085915
 
-```drush wm-addstates simple_page
+```
+drush wm-addstates simple_page
 drush wm-addstates basic_page
 drush wm-addstates bvd_stats
 drush wm-addstates bvd_external_news
 drush wm-addstates bvd_infographic
 drush wm-addstates bvd_video
 drush wm-addstates bvd_award
-drush wm-addstates bvd_news```
+drush wm-addstates bvd_news
+```
