@@ -1,14 +1,6 @@
 git
 ===
 
-## Add ssh key
-```
-$ eval "$(ssh-agent -s)"
-Agent pid 6800
-$ ssh-add ~/.ssh/id_rsa_sth
-Identity added: ~/.ssh/id_rsa_sth (~/.ssh/id_rsa_sth)
-```
-
 ## Branch deletion
 To delete a local branch
 ```git branch -d the_local_branch```
@@ -42,4 +34,12 @@ push tag
 ```
 git fetch origin
 git reset --hard origin/master
+```
+
+## Add ssh key
+```
+$ eval "$(ssh-agent -s)"
+Agent pid 6800
+$ ssh-add ~/.ssh/id_rsa_sth
+Identity added: ~/.ssh/id_rsa_sth (~/.ssh/id_rsa_sth)
 ```
