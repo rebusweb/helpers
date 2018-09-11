@@ -1,3 +1,4 @@
+```
 alias ls="ls -GF"
 alias la="ls -lhAGF"
 alias reload_profile=". ~/.bash_profile"
@@ -9,3 +10,4 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 ngrokhost() {
   ~/Programs/ngrok http -host-header=$1 80
 }
+```
