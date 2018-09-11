@@ -2,6 +2,7 @@ List of iOS apps I use:
 
 * Alfred https://www.alfredapp.com/
 * Spectacle https://www.spectacleapp.com/
+* Fenetre https://xn--fent-ipa.re/
 * Karabiner Elements https://github.com/tekezo/Karabiner-Elements
 * iTerm2 https://www.iterm2.com/
 * Sequel Pro https://www.sequelpro.com/
