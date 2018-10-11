@@ -1,4 +1,4 @@
-List of iOS apps I use:
+List of macOS apps I use:
 
 * Alfred https://www.alfredapp.com/
 * Spectacle https://www.spectacleapp.com/
