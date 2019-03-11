@@ -11,3 +11,4 @@ List of macOS apps I use:
 * FileZilla https://filezilla-project.org/
 * VirtualBox https://www.virtualbox.org/
 * eqMac2 https://bitgapp.com/eqmac/
+* Robo 3T https://robomongo.org/
