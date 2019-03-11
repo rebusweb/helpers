@@ -10,3 +10,4 @@ List of macOS apps I use:
 * PostMan https://www.getpostman.com/
 * FileZilla https://filezilla-project.org/
 * VirtualBox https://www.virtualbox.org/
+* eqMac2 https://bitgapp.com/eqmac/
